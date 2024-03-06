@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(gradientbackground.png), #FFFFFF;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Registration page */
+.register-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: rgba(245, 247, 255, 0.85);
+    height: 656px;
+    width: 1080px;
+    gap: 60px;
+    padding: 60px;
+    border-radius: 10px;
+}
+
+@media (width <= 767px) {
+    body {
+      background: rgba(245, 247, 255, 0.85);
+    }
+    .register-container {
+        width: 375px;
+        height: 980px;
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 40px 0px;
+        background: rgba(245, 247, 255, 0.85);
+        gap: 30px;
+        margin: auto;
+      }
+}
+.register-container .image img{
+    width: 450px; 
+    height:500px;
+    border-radius: 10px;
+}
+.register-container .register {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: auto;
+    gap: 15px;
+}
+.register-container .register h1 {
+    width: 450px;
+    height: 50px;
+    font-family: ' Abdoullah Ashgar EL-kharef';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+  }
+.register-container .register p{
+    font-size: 22px;
+    line-height: 38px;
+    color: #1F1249;
+    height: 76px;
+    width: 450px;
+}
+@media (width <= 767px) {
+    .register-container .register {
+      justify-content: center;
+      align-items: center;
+    }
+    .register-container .image img{
+      padding-left: 40px;
+      width: 300px;
+      height: 300px;
+      border-radius: 10px;
+    }
+    .register-container .register h1{
+        width: 315px;
+        height: 38px;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 38px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        text-transform: capitalize;
+        color: #2D2D2D;
+    }
+    .register-container .register p{
+      align-items: center;
+      width: 315px;
+      height: 52px;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+    }
+}
+.register-container .register div {
+    position: relative;
+}
+@media(width<=767px){
+.register-container .register div {
+    height: 60px;
+    width: 315px;
+    border-radius: 10px;
+    padding: 8px 20px;
+    } 
+}
+.register-container .register div input{
+    width: 420px;
+    height: 60px;
+    border-radius: 10px;
+    border: 0px;
+    padding: 8px 40px;
+    background-color: #FFFFFF;
+}
+@media (width<=767px){
+    .register-container .register div input{
+        width: 320px;
+        height: 50px;
+        padding: 8px 45px;
+    }   
+}
+.register-container .register div input:focus {
+    outline: none;
+}
+.register-container .register div input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+}
+.register-container .register div label {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    padding-right: 10px;
+    color: rgba(156, 173, 242, 1);
+    border-right: 1px solid rgba(156, 173, 242, 1);
+}
+.register-container .register .start-btn{
+    
+    height: 60px;
+    width: 425px;
+    border-radius: 10px;
+    border: 0px;
+    box-shadow: 0px 6px 18px #9CADF2;
+    cursor: pointer;
+    background: linear-gradient(113.87deg, #2663DF 14.81%, #758FF0 88.76%);
+    color:#fff;
+}
+.register-container .register .start-btn:focus {
+    outline: none;
+}
+  
+.register-container .register .start-btn:active {
+    transform: scale(0.95);
+}
+@media (width <= 768px) {
+    .register-container .register .start-btn{
+        width: 315px;
+        height: 60px;
+        margin:10px 0px 0px 50px;
+    }
+    .register-container .register div label{
+        top: 25px;
+        left: 30px;
+    }
+}
+.register-container .register div .error-message{
+    color:red;
+    padding:0px 10px
+}

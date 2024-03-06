@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(gradientbackground.png), #FFFFFF;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background: rgba(245, 247, 255, 0.85);
+    height: 435px;
+    width: 1080px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 60px;
+    border-radius: 10px;
+}
+
+@media (width <= 767px) {
+    body {
+      background: rgba(245, 247, 255, 0.85);
+    }
+    .container {
+        width: 375px;
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 40px 0px;
+        background: rgba(245, 247, 255, 0.85);
+      }
+}
+ 
+
+@media (width <= 767px) {
+    .container .welcome {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+.container .image img{
+    width: 450px; 
+    height:315px;
+    border-radius: 10px;
+}
+@media (width <= 767px) {
+    .container .image img {
+      height: 200px;
+      width: 200px;
+      border-radius: 10px;
+    }
+ }
+
+.container .content {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    gap: 30px;
+}
+@media (width <= 767px) {
+    .container .content {
+      align-items: center;
+      justify-content: center;
+    }
+}
+
+.container .content .welcome-head{
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    width: 315px;
+    height: 67px;
+    font-family: ' Abdoullah Ashgar EL-kharef';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 120%;
+    color: #2D2D2D;
+}
+.container .content .btn-start{
+  padding: 0px 50px;
+  gap: 12px;
+  width: 450px;
+  height: 60px;
+  background: linear-gradient(113.87deg, #2663DF 14.81%, #758FF0 88.76%);
+  box-shadow: 0px 6px 18px #9CADF2;
+  border-radius: 10px;
+  cursor: pointer;
+}
+@media (width <= 767px) {
+    .container .content .welcome-head {
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 50px;
+        letter-spacing: 0em;
+        justify-content: center;
+    }
+    #welcome-subhead {
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 0em;
+        line-height: 38px;
+        padding-left: 10vh;
+    }    
+    .container .content .btn-start{
+        height: 60px;
+        width: 100px;
+        border-radius: 10px;
+        padding: 0px;
+    }
+  }
+#welcome-subhead{
+    /* Subhead */
+    width: 450px;
+    height: 38px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 160%;
+    /* light/purple-12 */
+    color: #1F1249;
+}
+
+
+
+
+
