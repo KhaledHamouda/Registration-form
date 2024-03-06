@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- OWN CSS FILES-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" /> 
+        <link rel="stylesheet" href="css/registeration.css" />
+        <!-- END OWN CSS FILES-->
+
+        <title>signUp page</title>
+    </head>
+    <body>
+        <div class="register-container">
+            <div class="image">
+                <img alt="necklace-image" src="css/signup.png">
+            </div>
+            <form class="register" id="register">
+                <h1>Create Account</h1>
+                <p>Go ahead and sign up, let everyone know how awesome you are!</p>
+                <div class="username">
+                    <label for="username"><i class="fa fa-regular fa-envelope"></i></label>
+                    <input type="text" name="username" id="username" placeholder="username" onkeyup="checkUsername()">
+                </div>
+                <div class="email">
+                    <label for="email"><i class="fa fa-regular fa-envelope"></i></label>
+                    <input type="email" name="email" id="email" placeholder="Email" onkeyup="checkEmail()" />
+                </div>
+                <div class="pass">
+                    <label for="password"><i class="fa fa-solid fa-lock"></i></label>
+                    <input type="password" name="password" id="password" placeholder="password" onkeyup="checkPassword()">
+                </div>
+                <div class="confirm">
+                    <label for="confirm"><i class="fa fa-solid fa-lock"></i></label>
+                    <input type="password" name="confirm" id="confirm" placeholder="confirm" onkeyup="checkConfirm()">
+                </div>
+                <input type="reset" value="Create Account" class="start-btn" onclick="checkvalidate()"/>
+            </form>
+            <script src="js/main.js"></script>
+        </div>
+    </body>
