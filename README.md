@@ -4,6 +4,7 @@
 1. [Introduction](#introduction)
 2. [Features](#features)
 3. [Technologies Used](#technologies-used)
+4. [Prerequisites](#Prerequisites)
 
 
 ## Introduction
